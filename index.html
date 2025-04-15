@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-        <form
-          action="https://formspree.io/f/mzzewlbj"
-          method="POST"
-        >
-            <input type="date" name="dia" id="dia" placeholder="Ingrese el día"> <br>
+    <header><h2>Encuesta para la Facultad - Julieta Actis</h2></header><br>
+    <main>
+        <form action="https://formspree.io/f/mjkyzdro" method="POST">
+            <label for="uno">Cuál es el rol de un psicopedagogo?</label><br>
+            <input type="text" name="uno" id="uno" minlength="5" maxlength="200"> <br><br>
+
+            <label for="dos">En qué ámbitos se desempeña?</label><br>
+            <input type="text" name="dos" id="dos" minlength="5" maxlength="200"> <br><br>
+ 
+            <label for="tres">Ha tenido alguna experiencia relacionada con diagnósico (suya o de conocidos)?</label><br>
+            <select name="opciones">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="cuatro">En caso afirmativo: Cuál es la opinión sobre el resultado de dicha intervención?</label><br>
+            <input type="text" name="cuatro" id="cuatro"><br><br>
+
+            <label for="cinco">Cuántos años de carrera tiene un psicopedagogo y dónde se cursa?</label><br>
+            <input type="text" name="cinco" id="cinco" minlength="5" maxlength="200"><br><br>
+
+            <label for="seis">Otros cometarios que desee agregar?</label><br>
+            <textarea rows="5" cols="60" placeholder="Comentarios"></textarea><br />
             <input type="submit" value="Enviar">
         </form>
+    </main>
+    
 </body>
 </html>
